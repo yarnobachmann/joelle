@@ -1,0 +1,128 @@
+html,
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-image: url(http://weekbladparty.nl/wp-content/uploads/2015/06/Gerard-Joling-Credits-Nick-van-Ormondt-e1434747314512.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a{
+  font-family: joelle;
+}
+
+.stage {
+    margin: 0px;
+    width: 100%;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: scroll;
+    height: 100%;
+}
+
+.stage-caption {
+    width: 100%;
+    text-align: center;
+    max-width: 60rem;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.stage-caption p {
+    font-size: 22px;
+    color: #ffffff;
+    margin: 0 auto;
+    width: 70%;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+}
+
+.stage-caption a {
+    white-space: nowrap;
+    font-size: 22px;
+    color: #ffffff;
+    margin: 0 auto;
+    width: 70%;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+}
+
+.stage-caption a:hover {
+    color: rgb(45, 142, 25);
+    text-decoration: none;
+}
+
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 800px) {
+.stage-caption p {
+    font-size: 22px;
+    color: #ffffff;
+    margin: 0 auto;
+    width: 70%;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+}
+
+.display-3 {
+    font-size: 100px;
+    white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 800px) {
+.stage-caption p {
+    font-size: 15px;
+    color: #ffffff;
+    margin: 0 auto;
+    width: 70%;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+}
+
+.display-3 {
+    font-size: 45px;
+    white-space: nowrap;
+}
+
+}
+
+#naam {
+
+}
+
+#joëlle {
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+
+@font-face {
+    font-family: joelle;
+    src: url(../fonts/SHOWG.ttf);
+}
