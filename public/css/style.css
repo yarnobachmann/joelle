@@ -10,7 +10,7 @@ body {
 }
 
 body {
-  background-image: url(http://weekbladparty.nl/wp-content/uploads/2015/06/Gerard-Joling-Credits-Nick-van-Ormondt-e1434747314512.jpg);
+  background-image: url('../img/bg/bg_home.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -92,6 +92,7 @@ hr {
 .display-3 {
     font-size: 100px;
     white-space: nowrap;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
     }
 }
 

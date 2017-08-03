@@ -4,6 +4,10 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
+use Validator;
 
 class LoginController extends Controller
 {
@@ -25,7 +29,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -35,5 +39,21 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+
+    public function doLogin(Request $request)
+    {
+      $credentials = [
+        'email' => $request->input('email'),
+        'password' => $request->input('password'),
+      ];
+
+        if (!Auth::attempt($credentials)) {
+          Session::flash('flash_error', 'Something went wrong with your credentials');
+          return redirect()->back();
+        }
+
+        Session::flash('flash_message', 'You have logged in successfully');
+        return redirect('gallery/list');
     }
 }

@@ -17,5 +17,7 @@
 
    @include('partials._javascript')
 
+   @yield('code')
+
   </body>
 </html>

@@ -1,0 +1,17 @@
+*{
+    font-family: joelle;
+}
+
+.jumbotron {
+  box-shadow: 10px 10px 5px #888888;
+}
+
+
+.login {
+  margin-top: 8px;
+}
+
+@font-face {
+    font-family: joelle;
+    src: url(../fonts/SHOWG.ttf);
+}
