@@ -12,7 +12,7 @@
 
     <div class="stage-caption">
 
-        <a draggable="false" href="{{ url("login") }}"><img draggable="false" src="img/profile/joelle.jpg" alt="Joëlle" id="joëlle" width="30%"></a>
+        <a draggable="false" href="{{ url("login") }}"><img draggable="false" src="img/profile/joelle.jpg" alt="Joëlle" id="joëlle" width="50%"></a>
         <h1 class="display-3"><span class="intro">Ik ben </span> <span id="naam" class="intro" data-delay="1800">Joëlle</span></h1>
 
         <hr>
