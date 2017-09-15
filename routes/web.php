@@ -21,6 +21,12 @@ Route::get('user/logout', function(){
   return redirect('/');
 });
 
+Route::get('migrate', function() {
+
+      echo '<br>init with Migrate tables ...';
+      Artisan::call('migrate', ['--quiet' => true, '--force' => true]);
+      echo '<br>done with Migrate tables';
+});
 
 Route::get('gallery/list', 'GalleryController@viewGalleryList');
 Route::post('gallery/save', 'GalleryController@saveGallery');
