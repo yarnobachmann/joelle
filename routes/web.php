@@ -34,4 +34,4 @@ Route::get('gallery/delete/{id}', 'GalleryController@deleteGallery');
 Route::get('gallery/view/{id}', 'GalleryController@viewGalleryPics');
 Route::get('photos/{id}', 'pagesController@photo');
 Route::post('image/do-upload', 'GalleryController@doImageUpload');
-Route::get('albums', 'pagesController@album');
+Route::get('albums', 'PagesController@album');
